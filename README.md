@@ -19,8 +19,15 @@ $ npm install --save-dev @tailwindicss/plugin-border-sides
 $ yarn add -D @tailwindicss/plugin-border-sides
 ```
 
-Then add the plugin to your `tailwind.config.js` using `/tailwind` or `windi.config.js`
-using `/windi` as shown below:
+Then add the plugin to your `tailwind.config.js` or `windi.config.js` as shown below:
+
+```js
+require('@tailwindicss/plugin-border-sides/tailwind');
+```
+
+```js
+require('@tailwindicss/plugin-border-sides/windi');
+```
 
 ```js
 module.exports = {
@@ -40,6 +47,7 @@ module.exports = {
 	plugins: [
 		// ... for tailwind.config.js
 		require('@tailwindicss/plugin-border-sides/tailwind'),
+
 		// ... for windi.config.js
 		require('@tailwindicss/plugin-border-sides/windi'),
 	],
