@@ -1,5 +1,12 @@
 # @tailwindicss/plugin-border-sides
 
+<p>
+	<img src="https://img.shields.io/github/package-json/v/tailwindicss/plugin-border-sides?style=flat-square" />
+	<img src="https://img.shields.io/david/dev/tailwindicss/plugin-border-sides?style=flat-square" />
+	<img src="https://img.shields.io/github/workflow/status/tailwindicss/plugin-border-sides/Tests?style=flat-square" />
+	<img src="https://img.shields.io/github/license/tailwindicss/plugin-border-sides?style=flat-square" />
+</p>
+
 > Utility classes for each single border side.
 
 Install the plugin:
@@ -12,10 +19,10 @@ $ npm install --save-dev @tailwindicss/plugin-border-sides
 $ yarn add -D @tailwindicss/plugin-border-sides
 ```
 
-Then add the plugin to your `tailwind.config.js` or `windi.config.js` file:
+Then add the plugin to your `tailwind.config.js` using `/tailwind` or `windi.config.js`
+using `/windi` as shown below:
 
 ```js
-// tailwind.config.js \ windi.config.js
 module.exports = {
 	variants: {
 		// ...
@@ -31,9 +38,10 @@ module.exports = {
 		// ...
 	},
 	plugins: [
-		// ...
-		require('@tailwindicss/plugin-border-sides'),
-		// ...
+		// ... for tailwind.config.js
+		require('@tailwindicss/plugin-border-sides/tailwind'),
+		// ... for windi.config.js
+		require('@tailwindicss/plugin-border-sides/windi'),
 	],
 };
 ```
